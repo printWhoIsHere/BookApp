@@ -61,11 +61,11 @@
         android:layout_width="@dimen/_120sdp"
         android:layout_height="@dimen/_120sdp"
         android:layout_alignParentStart="true"
+        android:scaleType="centerCrop"
         android:layout_marginStart="@dimen/_20sdp"
         android:layout_marginTop="@dimen/_100sdp"
         android:background="@color/gray"
         android:src="@drawable/ic_person"
-        android:tint="@color/white"
         app:shapeAppearance="@style/styleRoundCornerImage" />
 
     <LinearLayout

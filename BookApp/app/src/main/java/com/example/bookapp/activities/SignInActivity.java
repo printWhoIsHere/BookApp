@@ -77,7 +77,8 @@ public class SignInActivity extends AppCompatActivity {
                 .addOnFailureListener(e -> {
                     //login failed
                     progressDialog.dismiss();
-                    Toast.makeText(SignInActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(SignInActivity.this, e.getMessage(),
+                            Toast.LENGTH_SHORT).show();
                 });
     }
 
@@ -95,11 +96,13 @@ public class SignInActivity extends AppCompatActivity {
                         //check user type
                         if (userType.equals("user")) {
                             //open user MainActivity
-                            startActivity(new Intent(SignInActivity.this, DashboardUserActivity.class));
+                            startActivity(new Intent(SignInActivity.this,
+                                    DashboardUserActivity.class));
                             finish();
                         } else if (userType.equals("admin")) {
                             //open admin MainActivity
-                            startActivity(new Intent(SignInActivity.this, DashboardAdminActivity.class));
+                            startActivity(new Intent(SignInActivity.this,
+                                    DashboardAdminActivity.class));
                             finish();
                         }
                     }
@@ -109,3 +112,7 @@ public class SignInActivity extends AppCompatActivity {
                 });
     }
 }
+
+
+
+

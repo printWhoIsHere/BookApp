@@ -39,9 +39,9 @@
             android:layout_height="@dimen/_120sdp"
             android:layout_below="@+id/titleView"
             android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
             android:layout_marginTop="@dimen/_50sdp"
             android:background="@color/background"
-            android:tint="@color/white"
             android:src="@drawable/ic_person_add"
             app:shapeAppearance="@style/styleRoundCornerImage" />
 
